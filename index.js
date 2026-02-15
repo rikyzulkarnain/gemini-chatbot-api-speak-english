@@ -46,7 +46,7 @@ app.post('/api/chat', async (req, res) => {
       config: {
         temperature: 0.9,
         systemInstruction:
-          "You are a friendly English speaking tutor who helps users practice conversation and improve vocabulary."
+          "You are a friendly English speaking tutor who helps users practice conversation and improve vocabulary"
       }
     });
 
