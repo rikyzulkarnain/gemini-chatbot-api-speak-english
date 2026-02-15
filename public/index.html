@@ -135,28 +135,28 @@
                         </div>
                     </div>
                     
-                    <form id="chat-form-ai" class="flex space-x-2">
+                    <form id="chat-form-ai" class="flex flex-wrap gap-2">
                         <input 
                             type="text" 
                             id="user-input-ai" 
                             placeholder="Ketik pesan Anda dalam bahasa Inggris..." 
-                            class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
+                            class="flex-1 min-w-[200px] px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-sm md:text-base"
                             autocomplete="off" 
                         />
                         <button 
                             type="button"
                             id="voice-input-btn"
                             title="Voice Input"
-                            class="bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-medium transition flex items-center space-x-2"
+                            class="bg-green-500 hover:bg-green-600 text-white px-3 md:px-4 py-3 rounded-lg font-medium transition flex items-center justify-center flex-shrink-0"
                         >
                             <i class="fa-solid fa-microphone"></i>
                         </button>
                         <button 
                             type="submit" 
-                            class="bg-accent hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition flex items-center space-x-2"
+                            class="bg-accent hover:bg-blue-600 text-white px-4 md:px-6 py-3 rounded-lg font-medium transition flex items-center justify-center gap-1 md:gap-2 flex-shrink-0"
                         >
-                            <span>Kirim</span>
                             <i class="fa-solid fa-paper-plane"></i>
+                            <span class="hidden sm:inline">Kirim</span>
                         </button>
                     </form>
                 </div>
