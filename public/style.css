@@ -1,0 +1,31 @@
+/* Custom Animations (from landing.html) */
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(59, 130, 246, 0); }
+  100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+.recording .mic-btn {
+  animation: pulse-ring 1.5s infinite;
+  background-color: #ef4444 !important; /* Red when recording */
+}
+
+.progress-bar-fill {
+  transition: width 1s ease-in-out;
+}
+
+/* Small helpers used by chat rendering */
+.chat-box {
+  /* tailwind handles most layout; this ensures overflow behavior if tailwind missing */
+  overflow-y: auto;
+}
+
+/* Bot translation block styling */
+.bot-translation {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-top: 1px solid rgba(34,197,94,0.15);
+  background-color: rgba(236,253,245,0.6);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #065f46; /* green-800 */
+}
